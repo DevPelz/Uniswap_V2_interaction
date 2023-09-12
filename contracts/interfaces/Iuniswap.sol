@@ -2,6 +2,10 @@
 pragma solidity ^0.8.19;
 
 interface IUniswap {
+    function factory() external pure returns (address);
+
+    function WETH() external pure returns (address);
+
     function addLiquidity(
         address tokenA,
         address tokenB,
